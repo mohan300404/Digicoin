@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script&family=Handjet:wght@300;800&family=Lobster&family=Montserrat:wght@800&family=Roboto&family=Tilt+Prism&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: gold;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background-color: black;
+  color: white;
   min-height: 100vh;
+}
+.title{
+    flex:1;
+    color: gold;
+    font-family:"Monsterrat";
+    font-weight:bolder;
+    cursor: pointer;
+   
+}
+.bannerContent{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25;
+  justify-content: center;
+  background-image: url("./Components/Banner/pic.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.9;
+}
+.tagline{
+    color:white;
+    font-weight: 900;
+    margin-bottom:15;
+    font-family:"Monsterrat";
+    text-align: center;
+}
+.tagline1{
+
+  color: darkgray;
+  text-transform: capitalize;
+  font-family: "Monsterrat";
+  text-align: center;
+  
+}
+.carousel{
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+#carousel{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 4vh;
+}
+.carouselItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+.row{
+  background-color: #16171a;
+  cursor: pointer;
+  font-family: "Monsterrat";
+}
+.row:hover{
+  background-color: #131111;
+}
+/* .pagination ul{
+  color: gold;
+} */
+
+.container{
+  display:flex;
+  
+}
+.sidebar{
+  width:30%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:25px;
+  border-right:2px solid grey;
+}
+/* container media query */
+/* [theme.breakpoints.down("md")]:{
+  flexDirection:"coloumn",
+  alignItems:"center",
+}, */
+/* sidebar media query */
+/* [theme.breakpoints.down("md")]:{
+  width:"100%",
+}, */
+.heading{
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Monsterrat";
+}
+.description{
+  width: 100%;
+  font-family: "Monsterrat";
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  text-align: justify;
+}
+.heading{
+  color: white;
+  font-family:"Monsterrat";
+  font-weight: bold;
+  margin-bottom: 20;
+}
+.marketdata{
+  align-self: start;
+  padding: 25px;
+  padding-top: 10px;
+  width: "100%";
+}
+/* market data media query */
+/* md
+display-flex,justifycontent-spacearound */
+/* sm
+flexdirection-coloumn
+alignitemscenter */
+/* xs
+alignitems start */
+
+.container2{
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 25px;
+  padding: 40px;
 }
-
-.App-link {
-  color: #61dafb;
+/* conatiner2
+md
+width100%
+margintop0
+padding20
+paddintog0 */
+.selectbutton{
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Monsterrat";
+  cursor: pointer;
+  font-weight: 500;
+  background-color: transparent;
+  width: 22%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selectbutton:active{
+  background-color: gold;
+  color: #131111;
+  font-weight: 700;
+}
+.selectbutton:hover{
+  background-color: gold;
+  color: #131111;
 }
